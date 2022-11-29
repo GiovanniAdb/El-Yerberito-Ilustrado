@@ -52,51 +52,53 @@ fortablecimientoPlantas(X,Y,W,Z):-curandero(X),fortablecimientoDePlantas(Y,W),me
 
 %PLANTA(Aconito)
 %Hechos
-aconito('Se requiere prescripcion medico-homeocopatica para usar esta planta, pues solo tocarla es peligroso').
-adormidera('Adormidera o amapola, de sus petalos se obtiene un te muy bueno').
-aguacate('Es reputado afrodisiaco y algo especial para los diabeticos por su falta de azucar y almidon').
-ahuehuete('El Ahuehuete o el sabino se utiliza casi todo;hojas,corteza y frutos').
-ajenjo('Usada desde tiempos remotos por los griegos y abusada por los franceses en forma del famoso licor "ABSINTHE" o ajenso, se toma en te, y Se cocinan las hojas y se toma 3 veces al dia').
+datosPlanta('Se requiere prescripcion medico-homeocopatica para usar esta planta, pues solo tocarla es peligroso').
+datosPlanta('Adormidera o amapola, de sus petalos se obtiene un te muy bueno').
+datosPlanta('Es reputado afrodisiaco y algo especial para los diabeticos por su falta de azucar y almidon').
+datosPlanta('El Ahuehuete o el sabino se utiliza casi todo;hojas,corteza y frutos').
+datosPlanta('Usada desde tiempos remotos por los griegos y abusada por los franceses en forma del famoso licor "ABSINTHE" o ajenso, se toma en te, y Se cocinan las hojas y se toma 3 veces al dia').
 
 %%Relaciones
 %PLANTA(Aconito)
-funcionPlantaAconito(aconito, 'Se utiliza en jaquecas serias').
-funcionPlantaAconito(aconito, 'Se utiliza para el dolor de muelas').
-funcionPlantaAconito(aconito, 'Se utiliza en ciatica').
-funcionPlantaAconito(aconito, 'Se utiliza en dolores articulares o hidropesca').
+plantaEspecifica(aconito,'Se requiere prescripcion medico-homeocopatica para usar esta planta, pues solo tocarla es peligroso, se prepara en forma de extracto fluido en forma de pomada o gel.','jaquecas serias').
+plantaEspecifica(aconito,'Para el dolor de muelas marca diablo se frota la encia con el extracto y se introduce en las caries un algodon empapado en aconito y santo remedio','dolor de muelas').
+plantaEspecifica(aconito,', se prepara en forma de extracto fluido en forma de pomada o gel.','ciatica').
+plantaEspecifica(aconito,'Se requre prescripcion medico-homeocopatica para usar esta planta, pues solo tocarla es peligroso, , se prepara en forma de extracto fluido en forma de pomada o gel.','dolores articulares').
+plantaEspecifica(aconito,'Se prepara en forma de extracto fluido en forma de pomada o gel.','hidropesca').
 
 %PLANTA(adormidera o amapola)
-funcionPlantaAdormidera(adormidera, 'Para calmar dolores').
-funcionPlantaAdormidera(adormidera, 'Bajar la fiebre').
-funcionPlantaAdormidera(adormidera, 'Facilitar el sueño').
-funcionPlantaAdormidera(adormidera, 'Curar la tos y el asma').
-funcionPlantaAdormidera(adormidera, 'Hirbiendo la "cabeza" (sin semillas) resulta una cura contra la diarrea y disenteria').
+plantaEspecifica(adormidera,'Adormidera o amapola, de sus petalos se obtiene un te muy bueno','Calmar dolores').
+plantaEspecifica(adormidera,'De sus petalos se obtiene un te muy bueno','dolores').
+plantaEspecifica(adormidera,'De la amapola se obtiene el opio','fiebre').
+plantaEspecifica(adormidera,'De sus petalos se obtiene un te muy bueno','Facilitar el sueño').
+plantaEspecifica(adormidera,'De sus petalos se obtiene un te muy bueno','Tos').
+plantaEspecifica(adormidera,'De sus petalos se obtiene un te muy bueno','Asma').
+plantaEspecifica(adormidera,'Hirbiendo la cabeza sin semillas','diarrea').
+plantaEspecifica(adormidera,'En lavativa','disenteria').
+plantaEspecifica(adormidera,'De sus petalos se obtiene un te muy bueno','Hirbiendo la "cabeza" (sin semillas) resulta una cura contra la diarrea').
 
 %PLANTA(aguacate)
-funcionPlantaAguacate(aguacate, 'La cascara es buenisima para expulsar lombrices').
-funcionPlantaAguacate(aguacate, 'Para el dolor de cabeza').
-funcionPlantaAguacate(aguacate, 'Con el hueso se prepara un aceite para el pelo que amenaza caerse').
-funcionPlantaAguacate(aguacate, 'Cura la tiña').
+plantaEspecifica(aguacate,'La cascara es buena en contra de las lombrices', lombrices).
+plantaEspecifica(aguacate,'Hojas de aguacate hervidas (previamente lavadas) para crear compresas y usarse para el dolor de cabeza', 'dolor de cabeza').
+plantaEspecifica(aguacate,'Con el hueso se prepara un aceite, el cual se untara en el cabello', 'caida de cabello').
+plantaEspecifica(aguacate,'Usar una mascarilla con un hueso de aguacate triturado', 'la tiña').
 
 %PLANTA(ahuehuete) o el sabino
-funcionPlantaHuehuete(ahuehuete, 'Es muy util en arterosclerosis avanzada').
-funcionPlantaHuehuete(ahuehuete, 'Favorece la circulacion, en forma de te 3 o 4 veces al dia').
-funcionPlantaHuehuete(ahuehuete, varices).
-funcionPlantaHuehuete(ahuehuete, hemorroides).
-funcionPlantaHuehuete(ahuehuete, 'mala circulacion').
-                        
+plantaEspecifica(ahuehuete,'El Ahuehuete o el sabino se utiliza casi todo;hojas,corteza y frutos, se pone en agua hirbiendo y se toma como te, 3 o 4 veces al dia', 'arterosclerosis avanzada').
+plantaEspecifica(ahuehuete,'El sabino se pone en agua hirbiendo y se toma como te, 3 o 4 veces al dia', 'circulacion').
+plantaEspecifica(ahuehuete,'El sabino se pone en agua hirbiendo y se toma como te, 3 o 4 veces al dia', varices).
+plantaEspecifica(ahuehuete,'El sabino se pone en agua hirbiendo y se toma como te, 3 o 4 veces al dia', hemorroides).
+plantaEspecifica(ahuehuete,'El Ahuehuete o el sabino se utiliza casi todo;hojas,corteza y frutos, se pone en agua hirbiendo y se toma como te, 3 o 4 veces al dia', 'mala circulacion').
+
 %PLANTA(ajenjo)
-funcionPlantaJenjo(ajenjo, 'Un te en ayunas es excelente en casos de colicos').
-funcionPlantaJenjo(ajenjo, 'anorexia').
-funcionPlantaJenjo(ajenjo, 'invasion de las lombrises').
-funcionPlantaJenjo(ajenjo, 'disenteria').
-funcionPlantaJenjo(ajenjo, 'atonia intestimal').
-funcionPlantaJenjo(ajenjo, 'tambien funciona contra el mal aliento').
-funcionPlantaJenjo(ajenjo, 'Aun el licor, usado moderadamente, es un buen estomacal y diuretico..').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma como un te en ayunas','casos de colicos').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma como un te en ayunas', 'anorexia').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma como un te en ayunas', 'invasion de las lombrises').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma como un te en ayunas', 'disenteria').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma como un te en ayunas', 'atonia intestimal').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma 3 veces al dia', 'mal aliento').
+plantaEspecifica(ajenjo,'Se cocinan las hojas y se toma 3 veces al dia', 'estomacal').
+plantaEspecifica(ajenjo,'Aun el licor es un buen', 'diuretico').
 
 %%Reglas
-recetarAconito(X,Y,Z):-aconito(X), funcionPlantaAconito(Y,Z).
-recetarAdormidera(X,Y,Z):-adormidera(X), funcionPlantaAdormidera(Y,Z).
-recetarAguacate(X,Y,Z):-aguacate(X), funcionPlantaAguacate(Y,Z).
-recetarAhuehuete(X,Y,Z):-ahuehuete(X), funcionPlantaHuehuete(Y,Z).
-recetarAjenjo(X,Y,Z):-ajenjo(X), funcionPlantaJenjo(Y,Z).
+recetarPlanta(X,Y,W):-plantaEspecifica(X,Y,W).
